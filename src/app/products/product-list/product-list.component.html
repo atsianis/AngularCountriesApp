@@ -1,0 +1,51 @@
+<!-- <p>product-list works!</p>
+<span> My product is {{product.name}} with ID: {{product.id}}</span>
+
+<span [innerText]="product.name">{{title}}</span>
+<span [title]="'I am a tooltip'">{{title}}</span>
+
+<p [textContent]="product.id"></p>
+<p>
+    {{product.id}}
+</p>
+
+<button (click)="print(1)">Click me</button>
+<br>
+<ul>
+    <li *ngFor = "let item of items">
+        {{item}}
+    </li>
+</ul>
+
+<br>
+<span *ngIf = "isVisible && isReadOnly; else hiddenTemplate"> Here I am </span>
+<span *ngIf="!isVisible">Here I am not</span>
+
+<span [hidden]="'isVisible'">Hi hi hi</span>
+
+<ng-template #hiddenTemplate>
+    <span>Else content</span>
+</ng-template>
+ -->
+<h4>{{title}}</h4>
+<div>
+    <span *ngFor="let product of products">
+
+        <!-- 1 way -->
+
+        <!-- <p *ngIf="product.inStock; else outOfStock">
+            {{product.id}}.{{product.name}}
+        </p>
+        <ng-template #outOfStock>
+            The {{product.name}} is out of stock
+        </ng-template> -->
+
+        <!-- 2nd way -->
+        <p [class.outOfStock]="!product.inStock">{{product.id}}.{{product.name}}</p>
+
+        <!-- 3rd way -->
+        <!-- <p [style.color]="!product.inStock ? 'red': 'black'">{{product.id}}. {{product.name}}</p> -->
+        
+    </span>
+    
+</div>

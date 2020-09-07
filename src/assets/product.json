@@ -1,0 +1,4 @@
+[{"id":1, "name":"Zanax", "inStock":false},
+{"id":2, "name":"Aspirin", "inStock":true},
+{"id":3, "name":"Vitamin", "inStock":true},
+{"id":4, "name":"Protein", "inStock":true}]
