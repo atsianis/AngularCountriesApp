@@ -1,8 +1,8 @@
-
-<h4> Countries </h4>
-
-<span *ngFor="let c of countries">
-    <p>
-        {{c.name}}
-    </p>
-</span>
+<div class="row justify-content-center">
+        <h4> Countries Angular App </h4>
+</div>
+<div class="row">
+        <div class="col-md-3" *ngFor="let c of countries">
+                <app-country-card [country]="c"></app-country-card>
+        </div>
+</div>
