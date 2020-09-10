@@ -1,8 +1,15 @@
 <div class="row justify-content-center">
         <h4> Countries Angular App </h4>
 </div>
+<hr>
+<div class="row justify-content-center">
+        <label>Search Countries:</label>
+        <input type="text" class="form-control" 
+                [(ngModel)]="search" 
+                (input)="onInput()">
+</div>
 <div class="row">
-        <div class="col-md-3" *ngFor="let c of countries">
+        <div class="col-md-3" *ngFor="let c of searched">
                 <app-country-card [country]="c"></app-country-card>
         </div>
 </div>
