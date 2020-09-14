@@ -8,7 +8,8 @@ import { MainComponent } from './main/main.component';
 import { ProductsModule } from './products/products.module';
 import { HttpClientModule } from '@angular/common/http';
 import { CountriesModule } from './countries/countries.module';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { AboutComponent } from './about/about.component'
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { FormsModule } from '@angular/forms'
     HeaderComponent,
     FooterComponent,
     MainComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

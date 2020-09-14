@@ -2,3 +2,15 @@ input{
     width: 200px;
     margin-left:20px;
 }
+
+.box{
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet;
+    border-radius: 30px;
+    background-color: lightcyan;
+    margin: 20px;
+}

@@ -20,8 +20,9 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
   <div class="container">
-    <app-header></app-header>
-    <app-main></app-main>
+    <app-header (navigate) = onNavigate($event)></app-header>
+    <app-country-list *ngIf="featureSelected === 'Countries'"></app-country-list>
+    <app-about *ngIf="featureSelected !== 'Countries' "></app-about>
     <app-footer></app-footer>
   </div>
 
